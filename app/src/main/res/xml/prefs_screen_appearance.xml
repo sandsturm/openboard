@@ -38,6 +38,11 @@
         android:defaultValue="false"
         android:persistent="true" />
     <CheckBoxPreference
+        android:key="pref_separate_numberrow"
+        android:title="@string/prefs_separate_numberrow"
+        android:defaultValue="false"
+        android:persistent="true" />
+    <CheckBoxPreference
         android:key="pref_resize_keyboard"
         android:title="@string/prefs_resize_keyboard"
         android:defaultValue="false"
