@@ -665,6 +665,9 @@ public class KeyboardBuilder<KP extends KeyboardParams> {
             final boolean languageSwitchKeyEnabledMatched = matchBoolean(caseAttr,
                     R.styleable.Keyboard_Case_languageSwitchKeyEnabled,
                     id.mLanguageSwitchKeyEnabled);
+            final boolean separateNumberRowEnabledMatched = matchBoolean(caseAttr,
+                    R.styleable.Keyboard_Case_languageSwitchKeyEnabled,
+                    id.mSeparateNumberRowEnabled);
             final boolean isMultiLineMatched = matchBoolean(caseAttr,
                     R.styleable.Keyboard_Case_isMultiLine, id.isMultiLine());
             final boolean imeActionMatched = matchInteger(caseAttr,

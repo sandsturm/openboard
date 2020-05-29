@@ -120,6 +120,7 @@ public final class KeyboardLayoutSet {
         boolean mVoiceInputKeyEnabled;
         boolean mNoSettingsKey;
         boolean mLanguageSwitchKeyEnabled;
+        boolean mSeparateNumberRowEnabled;
         RichInputMethodSubtype mSubtype;
         boolean mIsSpellChecker;
         int mKeyboardWidth;
@@ -326,6 +327,11 @@ public final class KeyboardLayoutSet {
 
         public Builder setLanguageSwitchKeyEnabled(final boolean enabled) {
             mParams.mLanguageSwitchKeyEnabled = enabled;
+            return this;
+        }
+
+        public Builder setSeparateNumberRowEnabled(final boolean enabled) {
+            mParams.mSeparateNumberRowEnabled = enabled;
             return this;
         }
 

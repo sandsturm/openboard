@@ -21,6 +21,7 @@ import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.text.TextUtils;
+import android.util.Log;
 
 import org.dslul.openboard.inputmethod.keyboard.internal.KeyDrawParams;
 import org.dslul.openboard.inputmethod.keyboard.internal.KeySpecParser;
@@ -330,6 +331,7 @@ public class Key implements Comparable<Key> {
             mMoreKeys = new MoreKeySpec[moreKeys.length];
             for (int i = 0; i < moreKeys.length; i++) {
                 mMoreKeys[i] = new MoreKeySpec(moreKeys[i], needsToUpcase, localeForUpcasing);
+                Log.d("moreKeys = ", moreKeys[i]);
             }
         } else {
             mMoreKeys = null;
