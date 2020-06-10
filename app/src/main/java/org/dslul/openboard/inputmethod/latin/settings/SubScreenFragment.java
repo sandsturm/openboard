@@ -28,6 +28,8 @@ import android.preference.PreferenceFragment;
 import android.preference.PreferenceScreen;
 import android.util.Log;
 
+import org.dslul.openboard.inputmethod.keyboard.KeyboardLayoutSet;
+
 /**
  * A base abstract class for a {@link PreferenceFragment} that implements a nested
  * {@link PreferenceScreen} of the main preference screen.

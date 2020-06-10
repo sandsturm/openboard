@@ -229,7 +229,7 @@
     <string name="prefs_keyboard_height_scale">Keyboard height scale</string>
 
     <!-- Title of the settings to enable separate number row -->
-    <string name="prefs_separate_numberrow">Enable separate number row</string>
+    <string name="prefs_separate_number_row">Enable separate number row</string>
 
     <!-- Title of the preference item for switching accounts [CHAR LIMIT=30] -->
     <string name="switch_accounts">Switch accounts</string>

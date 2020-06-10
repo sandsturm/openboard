@@ -81,6 +81,7 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
     public static final String PREF_CUSTOM_INPUT_STYLES = "custom_input_styles";
     public static final String PREF_ENABLE_SPLIT_KEYBOARD = "pref_split_keyboard";
     public static final String PREF_KEYBOARD_HEIGHT_SCALE = "pref_keyboard_height_scale";
+    public static final String PREF_SEPARATE_NUMBER_ROW = "pref_separate_number_row";
     public static final String PREF_SPACE_TRACKPAD = "pref_space_trackpad";
     public static final String PREF_DELETE_SWIPE = "pref_delete_swipe";
     // TODO: consolidate key preview dismiss delay with the key preview animation parameters.
@@ -340,6 +341,10 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
         final float percentage = prefs.getFloat(
                 Settings.PREF_KEYBOARD_HEIGHT_SCALE, UNDEFINED_PREFERENCE_VALUE_FLOAT);
         return (percentage != UNDEFINED_PREFERENCE_VALUE_FLOAT) ? percentage : defaultValue;
+    }
+
+    public static boolean readSeparateNumberRow(final SharedPreferences prefs) {
+        return prefs.getBoolean(PREF_SEPARATE_NUMBER_ROW, false);
     }
 
     public static boolean readSpaceTrackpadEnabled(final SharedPreferences prefs) {

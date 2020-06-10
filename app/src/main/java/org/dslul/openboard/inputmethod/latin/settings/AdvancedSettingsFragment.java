@@ -23,6 +23,7 @@ import android.media.AudioManager;
 import android.os.Bundle;
 import android.preference.ListPreference;
 
+import org.dslul.openboard.inputmethod.keyboard.KeyboardLayoutSet;
 import org.dslul.openboard.inputmethod.latin.AudioAndHapticFeedbackManager;
 import org.dslul.openboard.inputmethod.latin.R;
 import org.dslul.openboard.inputmethod.latin.SystemBroadcastReceiver;
